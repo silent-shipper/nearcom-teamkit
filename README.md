@@ -17,7 +17,7 @@ $improve-codebase-architecture
   -> check whether the current shape is the right shape
 
 $thermo-nuclear-code-quality-review
-  -> run before merging anything
+  -> make the PR as small and easy to review as possible before merge
 
 $ship
   -> commit, push, and PR only when the branch is clean
@@ -25,7 +25,7 @@ $ship
 
 That is the main loop.
 
-Keep the agent on track from the start. Grill first when the work is fuzzy. Improve the architecture when the shape feels wrong or too shallow. Always run thermo-nuclear review before merge. Ship only after the work is checked and understandable.
+Keep the agent on track from the start. Grill first when the work is fuzzy. Improve the architecture when the shape feels wrong or too shallow. Always run thermo-nuclear review before merge so the PR is as minimal and easy to review as possible. Ship only after the work is checked and understandable.
 
 For bigger queues, use the orchestrator pattern:
 
@@ -49,7 +49,7 @@ The root thread should coordinate. Workers can inspect or implement. Anything pu
 | `$karpathy-guidelines` | The agent needs to stay simple, surgical, and focused on the root problem. |
 | `$grill-to-goal` | The idea is not sharp enough yet. Use it to pressure test the plan, capture decisions, and turn it into a clear goal. |
 | `$improve-codebase-architecture` | The codebase shape matters. Use it to find deeper modules, better seams, and cleaner places for behavior to live. |
-| `$thermo-nuclear-code-quality-review` | Before merging anything. Use it to catch messy structure, bad abstractions, giant files, and avoidable complexity. |
+| `$thermo-nuclear-code-quality-review` | Before merging anything. Use it to make sure the PR is as small and easy to review as possible while still catching messy structure, bad abstractions, giant files, and avoidable complexity. |
 | `$ship` | The work is ready to leave your machine. Use it for checks, logical commits, push approval, and PR creation. |
 
 ### Utilities
@@ -64,4 +64,4 @@ The root thread should coordinate. Workers can inspect or implement. Anything pu
 
 If the output creates more ambiguity, it failed.
 
-Good agent work should leave behind a sharper goal, a cleaner structure, a stricter review, or a branch that is easier to ship.
+Good agent work should leave behind a sharper goal, a cleaner structure, a stricter review, or a branch that is smaller and easier to ship.
