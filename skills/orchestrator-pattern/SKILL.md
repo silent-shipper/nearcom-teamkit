@@ -1,9 +1,9 @@
 ---
-name: task-watcher
-description: Orchestrated watcher loop for processing queued tasks with worker threads and a human-input queue. Use when asked to watch tasks, triage items, delegate analysis, or collect approval gates.
+name: orchestrator-pattern
+description: Orchestrator pattern for queued task work with worker threads and a human-input queue. Use when asked to watch tasks, triage items, delegate analysis, coordinate workers, or collect approval gates.
 ---
 
-# Task Watcher
+# Orchestrator Pattern
 
 Run a simple orchestrator loop. The root thread coordinates only. Workers inspect or implement inside their assigned lane. Any external action waits for human approval.
 
@@ -11,7 +11,7 @@ This is a control-plane skill: load state, delegate, synthesize, queue decisions
 
 ## Empty Invocation Menu
 
-If the user invokes `$task-watcher` without a target, show:
+If the user invokes `$orchestrator-pattern` without a target, show:
 
 1. Watch queue
    Find eligible tasks and process them one by one.
@@ -227,7 +227,7 @@ Human input queue:
    Risk: <short risk>
 
 Next:
-- <what the watcher is doing now>
+- <what the orchestrator is doing now>
 ```
 
 Report meaningful changes, not routine polling.

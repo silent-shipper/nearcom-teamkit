@@ -2,7 +2,7 @@
   "name": "nearcom-teamkit",
   "displayName": "Nearcom Team Kit",
   "version": "0.1.0",
-  "description": "Nearcom team workflows for sharper planning, GitHub issues, architecture reviews, strict code quality reviews, task watching, shipping, and status updates.",
+  "description": "Nearcom team workflows for sharper planning, GitHub issues, architecture reviews, strict code quality reviews, orchestrator patterns, shipping, and status updates.",
   "author": {
     "name": "Nearcom"
   },
