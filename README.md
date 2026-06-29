@@ -27,7 +27,7 @@ That is the main loop.
 
 Keep the agent on track from the start. Grill first when the work is fuzzy. Improve the architecture when the shape feels wrong or too shallow. Always run thermo-nuclear review before merge so the PR is as minimal and easy to review as possible. Ship only after the work is checked and understandable.
 
-For bigger queues, use the orchestrator pattern:
+For bigger queues, use the orchestrator pattern (experimental):
 
 ```text
 $orchestrator-pattern
@@ -57,7 +57,7 @@ The root thread should coordinate. Workers can inspect or implement. Anything pu
 | Skill | Use it when |
 | --- | --- |
 | `$grill-to-issue` | The work should become a GitHub issue before it becomes code. |
-| `$orchestrator-pattern` | There is a queue of tasks, reviews, approvals, or worker lanes to coordinate. |
+| `$orchestrator-pattern (experimental)` | There is a queue of tasks, reviews, approvals, or worker lanes to coordinate. |
 | `$what-did-i-get-done` | You need a short status update from real commits over a real date range. |
 
 ## Team rule
